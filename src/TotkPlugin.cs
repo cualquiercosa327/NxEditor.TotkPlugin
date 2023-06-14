@@ -6,8 +6,8 @@ public class TotkPlugin : IServiceExtension
 {
     public string Name { get; } = "TotK Plugin";
 
-    public void RegisterExtension(IServiceManager serviceManager)
+    public void RegisterExtension(IServiceLoader serviceLoader)
     {
-        throw new NotImplementedException();
+        serviceLoader.Register(nameof(TotkZstd), new TotkZstd());
     }
 }
