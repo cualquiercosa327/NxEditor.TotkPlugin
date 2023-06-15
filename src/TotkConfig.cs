@@ -1,11 +1,10 @@
 ﻿using NxEditor.Plugin.Extensions;
+using System.Text.Json;
 
 namespace NxEditor.TotkPlugin;
 
-internal class TotkConfig : IConfigExtension
+internal class TotkConfig : ConfigExtension<TotkConfig>
 {
-    public static TotkConfig Shared { get; } = new();
-
-    public string Name { get; set; } = "TotK Config";
+    public override string Name { get; } = "totk";
     public string GamePath { get; set; } = string.Empty;
 }
