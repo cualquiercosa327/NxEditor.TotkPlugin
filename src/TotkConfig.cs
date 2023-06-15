@@ -1,5 +1,4 @@
 ﻿using NxEditor.Plugin.Extensions;
-using System.Text.Json;
 
 namespace NxEditor.TotkPlugin;
 
